@@ -10,12 +10,22 @@
 
 .slider {
     position: relative;
-    height: 100vh;
-
-    background-image: url(/assets/media/images/programpng.png);
-    background-repeat: no-repeat;
-    background-position: center/center;
+    height: 60vh;
     
+
+
+
+    
+}
+.slider img {
+    position: absolute;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    z-index: -999999;
 }
 .banner-content .description {
     font-family: var(--basicFont);
@@ -26,9 +36,11 @@
     width: 80px;
     height: 30px;
     border-radius: 10px;
+    cursor: pointer;
     font-size: clamp(0.1rem, 2.0vh, 0.8rem);
 }
 .banner-content {
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,8 +63,9 @@ ul.dots li {
     &.active {
         background-color: #000;
         transform: scale(1.4);
-
+        cursor: default;
     }
+    cursor: pointer;
     transition: 0.2s;
     width: 10px;
     height: 10px;
@@ -72,6 +85,9 @@ ul.dots li:hover {
         transform: translate(-50%, 44%);
         display: flex;
         flex-direction: row;
+    }
+    .auth form{
+        flex-direction: column;
     }
 }
 
@@ -166,8 +182,9 @@ ul.dots li:hover {
     padding-top: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -255,7 +272,8 @@ ul.dots li:hover {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: center;
 }
 .comments .cards .card {
     max-width: 300px;
@@ -263,6 +281,7 @@ ul.dots li:hover {
     height: 400px;
     width: 100%;
     border-radius: 25px;
+    
     display: flex;
     padding: 20px;
     flex-direction: column;
@@ -274,7 +293,9 @@ ul.dots li:hover {
     cursor: pointer;  
     }
     &.active {
+        margin-block: 40px;
         transform: scale(1.2);
+        cursor: default;
     }
     &.comment-description {
         font-size: 16px;
