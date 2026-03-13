@@ -127,38 +127,22 @@ ul {
     align-items: center;
     justify-content: center;
     column-gap: 10px;
-    &>.search {
+    &>a>.search-icon {
         border: none;
+        width: 25px;
+        height: 25px;
     }
     cursor: pointer;
-    &>.accountButton:hover {
-                    display: block!important;
+
+    
+    &>.authBlock {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0!important;
     }
-    &>.accountButton {
-        cursor: pointer;
-        position: relative;
-        width: 25px;
-        max-height: 60px;
-
-    }
-    &>.accountButton:hover {
-        &>.authBlock {
-            display: block!important;
-        }
-    }
-    &>.accountButton>.authBlock {
-
-        position: absolute;
-        right: 0;
-        bottom: -30px;
-        display: none!important;
+    &>.authBlock>a {
 
 
-
-    }
-    &>.accountButton>.authBlock>a {
-
-        margin-top: 20px;
         
         border: #000 1px solid;
 
@@ -175,7 +159,7 @@ footer {
     width: 100%;
     
     padding: 10px;
-    height: 20vh;
+    height: 200px;
     
     margin-top: auto;
 }
