@@ -30,7 +30,8 @@
 }
 main {
     flex:1;
-
+    padding-inline: 40px;
+    padding-block: 20px;
 }
 body {
     display: flex;
@@ -147,8 +148,7 @@ ul {
         border: #000 1px solid;
 
         font-family: var(--accentFont);
-        font-size: clamp(0.5rem, 5vw, 0.8rem);
-
+    font-size: clamp(0.5rem, 3.2vw, 1.5rem);
     }
 
 }

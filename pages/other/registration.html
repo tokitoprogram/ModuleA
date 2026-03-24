@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/css/basicCSS.css">
-    <link rel="stylesheet" href="../../assets/css/other/index.css">
+    <link rel="stylesheet" href="../../assets/css/other/registration.css">
 </head>
 <body>
         <header class="header">
@@ -35,14 +35,98 @@
                 <div class="authBlock">
                     <a href="../../pages/other/account.html">Личный кабинет</a>
                     <a href="#auth">Авторизация</a>
-                    <a href="../../pages/other/registration.html">Регистрация</a>
+                    <a href="#">Регистрация</a>
                 </div>
 
             </div>
         </div>
     </header>
     <main class="content">
-        
+        <h1>Регистрация</h1>
+        <form  method="POST">
+            <div class="form-box">
+                <h2>Регистрация</h2>
+                <div class="label ">
+                    <label for="firstName">Имя</label>
+                    <input type="text" required name="firstName" placeholder="Имя">
+                </div>
+                <div class="label">
+                    <label for="lastName">Фамилия</label>
+                    <input type="text" name="lastName" placeholder="Фамилия">
+                </div>
+                <div class="label">
+                    <label for="email">Почта</label>
+                    <input type="email" required placeholder="example@gmail.com">
+                </div>
+                <div class="label">
+                    <label for="pass">Пароль</label>
+                    <input type="password" name="pass" placeholder="***************">
+                </div>
+                <div class="label">
+                    <label for="repass">Повтор пароля</label>
+                    <input type="password" name="lastName" placeholder="***************">
+                </div>                
+                <div class="flex">
+                    <div class="left">
+                        <label for="avatar" class="avatar">
+                            <div class="box"></div>
+                            Фото профиля
+                        </label>
+                        <input type="file" name="avatar"  id="avatar" required hidden>
+                    </div>
+                    <div class="right">
+                        <div class="label">
+                            <label for="age">Возвраст</label>
+                            <input type="number" name="age" required>
+                        </div>
+                        <div >
+                            <div class="label">
+                                <input type="radio" name="gender" value="male" id="">
+                                <label for="male">Мужской</label>
+                            </div>
+                            <div class="label">
+                                <input type="radio" name="gender" value="female" id="">
+                                <label for="female">Женский</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="sumbit">Зарегистрироваться</button>
+            </div>
+            <div class="form-box">
+                <h2>Добавить участников</h2>
+                <div class="label ">
+                    <label for="firstName">Имя</label>
+                    <input type="text" required name="firstName" placeholder="Имя">
+                </div>
+                <div class="label">
+                    <label for="lastName">Фамилия</label>
+                    <input type="text" name="lastName" placeholder="Фамилия">
+                </div>              
+                <div class="flex">
+                    <div class="right">
+                        <div class="label">
+                            <label for="age">Возвраст</label>
+                            <input type="number" name="age" required>
+                        </div>
+                        <div >
+                            <div class="label">
+                                <input type="radio" name="gender" value="male" id="">
+                                <label for="male">Мужской</label>
+                            </div>
+                            <div class="label">
+                                <input type="radio" name="gender" value="female" id="">
+                                <label for="female">Женский</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button">Добавить</button>
+            </div>
+            <div class="form-box two" >
+                <h2>Список участников</h2>
+            </div>
+        </form>
     </main>
         <footer>
         <div class="container">
