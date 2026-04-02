@@ -16,7 +16,7 @@ body , html, * {
 
 
 
-button {
+.startButton {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,7 +30,7 @@ button {
     border: none;
     background-color: transparent;
 }
-button:hover {
+.startButton:hover {
     color: gray;
 }
 .none {
@@ -48,4 +48,10 @@ button:hover {
     left: 0;
     top: 0;
     color: white;
+}
+.bems {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
 }
