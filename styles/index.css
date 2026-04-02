@@ -1,0 +1,51 @@
+body , html, * {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px; 
+    height: 600px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 48px;
+    color: white;
+    z-index: 99999;
+    transition: 0.2s;
+    border: none;
+    background-color: transparent;
+}
+button:hover {
+    color: gray;
+}
+.none {
+    display: none!important;
+}
+
+.block {
+    display: block!important;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    color: white;
+}
